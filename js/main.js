@@ -12,14 +12,15 @@ for (let i = 0; i < products.length; i++) {
 
     if (price <= 20) {
         console.log(i + 1,name, price, ':)');
-    } else {
+    } else if (price >= 100){
         console.log(i + 1,name, price, ':(');  
-    }   
-
+    } else {
+        console.log(i + 1,name, price); 
+    }
     sum +=price;
-    console.log(sum);  
 }
-
+    
+    console.log(sum);  
 
 
 
